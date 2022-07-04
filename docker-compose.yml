@@ -1,0 +1,16 @@
+version: "3"
+services:
+  strapi:
+    container_name: strapi
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./.tmp:/opt/app/.tmp
+      - ./config/developpement:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./package-lock.json:/opt/package-lock.json
+      - ./.env:/opt/app/.env
+    ports:
+      - "1337:1337"
