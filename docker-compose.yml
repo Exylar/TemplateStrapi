@@ -1,7 +1,7 @@
 version: "3"
 services:
   strapi:
-    container_name: strapi
+    container_name: strapiIOT
     build: .
     restart: unless-stopped
     env_file: .env

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temp_hiss",
+  "info": {
+    "singularName": "temp-his",
+    "pluralName": "temp-hiss",
+    "displayName": "Temp_his",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "float"
+    },
+    "datetime": {
+      "type": "datetime"
+    }
+  }
+}

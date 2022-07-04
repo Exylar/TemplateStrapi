@@ -62,46 +62,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "gender": {
-      "type": "enumeration",
-      "enum": [
-        "Mr",
-        "Mme"
-      ]
-    },
-    "firstname": {
-      "type": "string"
-    },
-    "lastname": {
-      "type": "string"
-    },
-    "phone_number": {
-      "type": "string"
-    },
-    "birthday": {
-      "type": "string"
-    },
-    "image": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::image.image"
-    },
-    "wallet": {
-      "type": "decimal",
-      "required": false,
-      "min": 0
-    },
-    "roles": {
-      "type": "component",
-      "repeatable": true,
-      "component": "user.role"
-    },
-    "event_participation": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::event.event",
-      "mappedBy": "user"
     }
   }
 }
