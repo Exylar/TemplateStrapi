@@ -2,8 +2,8 @@ module.exports = {
     routes: [
       {
         method: "GET",
-        path: "/temp/custom/graph/:id",
-        handler: "temp-his.graph",
+        path: "/sensor/custom/list",
+        handler: "sensor.list",
       },
     ],
   };

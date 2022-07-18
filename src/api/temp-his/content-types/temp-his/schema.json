@@ -4,7 +4,7 @@
   "info": {
     "singularName": "temp-his",
     "pluralName": "temp-hiss",
-    "displayName": "Temp_his",
+    "displayName": "historique",
     "description": ""
   },
   "options": {
@@ -20,6 +20,11 @@
     },
     "datetime": {
       "type": "datetime"
+    },
+    "sensor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sensor.sensor"
     }
   }
 }
